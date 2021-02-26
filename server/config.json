@@ -1,0 +1,20 @@
+{
+  "database":{
+    "host": "ec2-107-22-211-248.compute-1.amazonaws.com",
+    "database": "d1fg6lc7ogq281",
+    "user": "kbuesxacagftwy",
+    "port": "5432",
+    "password": "c0cbcae48a84050a6ea51593d82b120e74d90907c0077cbaad4083918c2333ef",
+    "ssl": true
+  },
+
+  "sessionSetup":{
+    "cookieName": "clientSession",
+    "key": "uid",
+    "secret": "thisIsSupposedToBeALongUnguessableStringSoHereYouGoEverybody",
+    "cookie": {
+      "maxAge": 86400000
+    }
+  },
+  "reservedTag": "__new"
+}

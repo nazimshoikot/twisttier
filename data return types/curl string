@@ -1,0 +1,58 @@
+curl -X POST http://localhost:8080/uploadProfileImage \
+-H "content-type: multipart/form-data" \
+-F "profileImage=@/home/vert/Downloads/portfolio/IMG_20180804_121544677_copy.jpg"
+
+
+// creating a user with a profile picture not sure why this string works but the others don't
+curl -i -X POST http://localhost:8080/uploadProfileImage \
+-H "content-type: multipart/form-data" \
+-F "email=k@k.com" \
+-F "password=12345678" \
+-F "name=iHateMax'sCologne" \
+-F "bio=it makes him smell like a douche bro" \
+-F "username=seriously" \
+-F "profileImage=@/home/vert/Downloads/portfolio/IMG_20180804_121544677_copy.jpg"
+
+
+// logging in also doesnt work 
+
+curl -i -X POST http://localhost:8080/login \
+-H "content-type=multipart/form-data"
+-F "email=q@q.com" \
+-F "password=qqqqqqqq" \
+-b sessionInfo
+
+
+// changing profile information does work yay
+
+curl -i -X POST http://localhost:8080/api/update/hell \       
+-H "content-type: multipart/form-data" \
+-F "bio=it makes him smell like a douche bro" \
+-F "name=hell is real" \
+-F "profileImage=@/home/vert/Downloads/portfolio/IMG_20180804_121544677_copy.jpg"
+
+
+// delete account test doesnt work :( only works when i have the upload middleware included? what?
+curl -i -X POST 'http://localhost:8080/api/delete' \
+-H "content-type: multipart/form-data" \
+-F "username=killMeSir" \
+-F "email=kill@me.com" \
+-F "password=killmeplease" 
+
+
+// testing searching for a user
+curl -i -X POST 'http://localhost:8080/api/search/s' \
+-H "content-type: multipart/form-data"
+
+psql -h ec2-107-22-211-248.compute-1.amazonaws.com -U kbuesxacagftwy -p 5432 -d d1fg6lc7ogq281 
+
+c0cbcae48a84050a6ea51593d82b120e74d90907c0077cbaad4083918c2333ef
+
+// testing getting an individual spin
+
+curl -i -H "Content-Type: application/json" \
+ --request POST \
+ --data '{"spinID":"1057"}' \
+ -X POST http://localhost:8080/api/spin/doeJohn
+
+

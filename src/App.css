@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.App {
+  text-align: center;
+  padding : 0;
+  margin: 0;
+}
+
+.App-header {
+  height: 10%;
+  padding: 0;
+  /*color: darkgray;*/
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Navbardemo {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font: sans-serif;
+}
+
+.switcher {
+  vertical-align: center;
+}
+
+
+.icon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  padding: 0;
+}

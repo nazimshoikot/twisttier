@@ -1,0 +1,23 @@
+.user-feed-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width:800px){
+    .user-feed-page {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1000px){
+    .user-feed-page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.more-tags-div {
+    max-height: 300px;
+    overflow: auto;
+}

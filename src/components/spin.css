@@ -1,0 +1,161 @@
+:root{
+    --spin-main: rgb(37, 0, 37);
+    --spin-second:  rgb(180, 78, 78);
+    --spin-back: rgb(158, 188, 199);
+    --button-main: rgba(0, 102, 255, 0.63);
+    --button-second: rgba(255, 0, 76, 0.63);
+}
+
+.spin-area{
+    width: 95%;
+    max-height: 70vh;
+    margin: 1vh auto;
+    border: 2px solid var(--spin-main);
+    border-radius: 25px;
+    padding: 10px;
+    color: black;
+    font-weight: 400;
+    display: block;
+}
+
+.username-section{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-weight: 300;
+    padding-left: 1vw;
+    max-height: 5vh;
+    margin: 10px;
+}
+
+.username-section .username-link {
+    flex: 10;
+}
+.username-section .username-link a {
+    font-family: 'Lato', cursive;
+    font-weight: 800;
+}
+
+.spin-content{
+    display: block;
+    text-align: left;
+    padding-left: 1vw;
+    border: solid;
+    border-radius: 50px;
+    font-size: 1em;
+    box-shadow: 2px 3px var(--spin-second);
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.spin-content p{
+    font-family: 'Lato', cursive;
+    max-height: 50vh;
+    max-width: 30ch;
+    margin: auto;
+}
+
+.time-section{
+    text-align: right;
+    font-family: 'Lato', cursive;
+    font-style: italic;
+    padding-left: 1vw;
+    max-height: 3vh;
+    max-width: 45vw;
+}
+
+.other-info {
+    display: flex;
+    margin: 10px;
+}
+
+.share-image, .like-image {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+
+.more-tags-image {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+
+.tags-container p {
+    font-size: 0.9em;
+    padding: 0.1em;
+}
+
+p.followed-tags:hover, p.unfollowed-tags:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p.followed-tags {
+    color: var(--spin-main);
+}
+
+p.unfollowed-tags {
+    color: var(--spin-second);
+}
+
+p.num-likes{
+    margin-left: 5px;
+    text-align: left;
+    flex: 50;
+}
+
+.more-tags-button {
+    background-color: var(--button-main);
+    width: 2vw;
+    height: 4vh;
+    text-align: center;
+    flex: 1;
+    border: none;
+    outline: none;
+    margin: none;
+    border-radius: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    flex: 40;
+    align-items: right;
+    margin-right: 1vw;
+    z-index: 0;
+}
+
+.editButtons {
+    margin : 10px;
+}
+
+.image-button-cover{
+    width: 1.5cm;
+    height: 1.5cm;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.image-button-cover:hover{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid lightskyblue;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.moreTagsDiv {
+    max-height: 500px;
+    overflow: auto;
+}

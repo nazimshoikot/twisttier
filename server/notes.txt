@@ -1,0 +1,7 @@
+need to figure out how front end is going to know that a user is logged in
+  so like if the browser closes and then they reopen it, how do we check that?
+  well the server could send an ack header every time a transaction occurs, but
+  that seems insecure. 
+  could make a call to the server on the first boot? this would work, but it could be slow
+    hmm actually i think this is a good way of doing this
+    have a post for /confirmed or whatever arbitrary name we call it and then send 200 or 406

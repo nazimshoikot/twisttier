@@ -1,0 +1,7 @@
+{
+  "email": "arbtrary@email.com",
+  "password": "arbitary but min length of 8",
+  "bio": "arbitrary but max length of 35",
+  "name": "max length of 25 characters for whatever reason lol",
+  "username": "arbitrary name < 15 chars"
+}

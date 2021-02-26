@@ -1,0 +1,64 @@
+.profile-container {
+    padding-top : 10px;
+}
+
+.profile-info {
+    border-radius : 10px;
+    border : solid 3px;
+    max-width : 300px;
+    margin-left: 10px;
+    margin-bottom: 10vh;
+    margin : auto;
+}
+
+.tag-info {
+    background-color : rgb(99, 163, 163);
+    color: white;
+    margin : auto;
+    border-radius : 10px;
+    border : solid 3px;
+    max-width : 300px;
+    margin-left: 10px;
+    margin: auto;
+}
+
+.tag-entry{
+    text-decoration: none;
+    border: solid 2px black;
+    background-color: salmon;
+}
+
+.tag-list{
+    display: grid;
+    grid-template-columns: 1fr
+}
+
+.follow-info-container{
+    display: inline;
+}
+
+.user-list-view {
+    border: solid;
+    background-color: bisque;
+    color: black;
+}
+
+.user-list-view a {
+    text-decoration: none;
+    color: black;
+}
+
+.hover-tag-view {
+    position: absolute;
+    background-color: yellow;
+    color: black;
+    z-index: 5;
+}
+
+.user-list-view:hover{
+    background-color: burlywood;
+}
+
+a {
+    text-decoration: none;
+}

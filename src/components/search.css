@@ -1,0 +1,51 @@
+.search-profile-info {
+    border: solid 10px green;
+}
+
+.searchProfileContainer {
+    /* padding-top : 20px;
+    background-color : darkslategrey;
+    width : 70%;
+    height : 20%;
+    padding : 20px; */
+    
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin : 20px;
+
+}
+
+
+.profilesContainer {
+    display: flex;
+    flex-wrap : wrap;
+}
+
+.searchDP {
+    border : solid 2px lightblue;
+    margin : 20px;
+}
+
+.searchDPCont {
+    border : solid 2px lightblue;
+    margin: 20px;
+}
+
+.searchDPCont:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+/* .searchUsername {
+    background-color: red;
+} */
+
+a {
+    text-decoration: none;
+}
+
+/* .showMoreDiv {
+    max-height: 500px;
+    overflow: auto;
+} */

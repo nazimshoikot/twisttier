@@ -1,0 +1,158 @@
+:root{
+    --spin-main: rgb(37, 0, 37);
+    --spin-second:  rgb(180, 78, 78);
+    --spin-back: rgb(158, 188, 199);
+    --button-main: rgba(0, 102, 255, 0.63);
+    --button-second: rgba(255, 0, 76, 0.63);
+}
+
+.quoted-spin-area{
+    width: 70%;
+    max-height: 40vh;
+    border: 2px solid var(--spin-main);
+    border-radius: 25px;
+    padding: 10px;
+    color: black;
+    font-weight: 200;
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+}
+
+.quoted-username-section{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-weight: 300;
+    padding-left: 1vw;
+    max-height: 10vh;
+    margin: 10px;
+}
+
+.quoted-username-section .quoted-username-link {
+    flex: 10;
+}
+.quoted-username-section .quoted-username-link a {
+    color: var(--spin-main);
+    font-family: 'Lato', cursive;
+    font-weight: 800;
+}
+
+.quoted-spin-content{
+    display: block;
+    text-align: left;
+    padding-left: 1vw;
+    border: solid;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: 2px 3px var(--spin-second);
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.quoted-spin-content p{
+    font-family: 'Lato', cursive;
+    max-height: 50vh;
+    max-width: 30ch;
+    margin: auto;
+}
+
+.quoted-time-section{
+    text-align: right;
+    font-family: 'Lato', cursive;
+    font-style: italic;
+    padding-left: 1vw;
+    max-height: 2vh;
+    max-width: 25vw;
+}
+
+.quoted-other-info {
+    display: flex;
+    margin: 10px;
+}
+
+.quoted-share-image, .quoted-like-image {
+    width: 70%;
+    height: 70%;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+
+.quoted-more-tags-image {
+    width: 70%;
+    height: 70%;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+
+.quoted-tags-container p {
+    font-size: 0.5em;
+    padding: 0.05em;
+}
+
+p.quoted-followed-tags:hover, p.quoted-unfollowed-tags:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p.quoted-followed-tags {
+    color: var(--spin-main);
+}
+
+p.quoted-unfollowed-tags {
+    color: var(--spin-second);
+}
+
+p.quoted-num-likes{
+    margin-left: 5px;
+    text-align: left;
+    flex: 1;
+}
+
+.quoted-more-tags-button {
+    background-color: var(--button-main);
+    width: 2vw;
+    height: 4vh;
+    text-align: center;
+    flex: 1;
+    border: none;
+    outline: none;
+    margin: none;
+    border-radius: 10px;
+}
+
+.quoted-action-buttons {
+    display: flex;
+    flex: 40;
+    align-items: right;
+    margin-right: 1vw;
+    z-index: 0;
+}
+
+.quoted-editButtons {
+    margin : 10px;
+}
+
+.quoted-image-button-cover{
+    width: 1.5cm;
+    height: 1.5cm;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.quoted-image-button-cover:hover{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid lightskyblue;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
